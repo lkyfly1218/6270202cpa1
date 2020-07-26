@@ -29,7 +29,8 @@ int main()
       <<"输入序号并轻按回车以继续：";
   int num = 0;
   cin>>num;
-  switch(num)
+
+  switch (num)
   {
     case 1:
       num_1();
@@ -91,7 +92,7 @@ void num_1()
       <<"     "<<"院校代码"<<"    "
       <<"     "<<"最低排名"<<"    "<<endl;
 
-  for(int i =0;i < 10;i++)
+  for (int i =0;i < 10;i++)
   {
     cout<<p->name<<p->code<<"            "<<p->ranking<<endl<<endl;
     p++;
@@ -104,7 +105,6 @@ void num_1()
   switch (a) 
   {
     case 0:
-    main();
     case 1:
       num_1_1();
   }
@@ -118,7 +118,7 @@ void num_1_1()
   major_class * p1 = &CUOG[0];
   cout<<"专业类别"<<endl<<endl;
 
-  for(int i =0;i < 28;i++)
+  for (int i =0;i < 28;i++)
   {
     cout<<p1->name<<"       "<<p1->website<<endl<<endl;
     p1++;
@@ -127,7 +127,7 @@ void num_1_1()
   cout<<"输入0返回上层菜单："<<endl;
   int b = 0;
   cin>>b;
-    if(b == 0)
+    if (b == 0)
     {
     }
     return;
