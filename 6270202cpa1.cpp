@@ -4,14 +4,16 @@
 using namespace std;
 
 //创建大学主体结构体
-struct collage{
+struct collage
+{
   string name;
   int code;
   int ranking;
 };
 
 //创建专业主体结构体
-struct major_class{
+struct major_class
+{
   string name;
   string website;
 };
@@ -35,8 +37,14 @@ int main()
 
     cin >> num;
 
-    if (num == 1)
-      num_1();
+    switch (num)
+    {
+      case 1:
+        num_1();
+
+      default:
+        continue;
+    }
   }
 
   return 0;
@@ -116,7 +124,7 @@ void num_1()
         num_1_1();
 
       default:
-        break;
+        continue;
     }
   }
 
@@ -139,5 +147,5 @@ void num_1_1()
     cin >> b;
   }
 
-    return;
+  return;
 }
